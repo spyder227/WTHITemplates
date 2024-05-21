@@ -30,7 +30,7 @@ tag-wrap u {
     letter-spacing:1px;
 }
 [data-type="post"] {
-    width:60%;
+    width:80%;
     max-width:500px;
     min-width:250px;
     display:block;
@@ -274,7 +274,7 @@ post-img img {
     border:7px solid var(--accent-60);
 }
 [data-type="playlist"] {
-    width:60%;
+    width:80%;
     max-width:500px;
     min-width:250px;
     display:block;
@@ -342,7 +342,7 @@ song-lyrics {
     margin-bottom:10px;
 }
 [data-type="imagegrid"] {
-    width:50%;
+    width:80%;
     max-width:400px;
     display:grid;
     margin-left:auto;
@@ -351,9 +351,12 @@ song-lyrics {
     padding:20px;
 }
 image-grid {
+    margin-top:-10px;
     display:grid;
     padding:10px;
     grid-template-columns:33% 33% 33%;
+    margin-left:auto;
+    margin-right:auto;
 }
 image-grid img {
     width:100px;
@@ -362,3 +365,83 @@ image-grid img {
     margin:5px;
     border:1px solid var(--accent);
 }
+[data-type="comm"] {
+    width:80%;
+    max-width:350px;
+    min-width:250px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+    background:var(--bg-secondary);
+    padding:20px 50px;
+    height:520px;
+}
+[data-rounded="yes"] {
+    border-radius:25px;
+}
+contact-name {
+    margin-top:5px;
+    margin-left:-10px;
+    margin-bottom:-10px;
+    color:var(--text-on-bg);
+    text-transform:uppercase;
+    font-family:var(--font-head);
+    font-size:var(--size-lg);
+    font-weight:700;
+    display:block;
+}
+comm-block {
+    position:absolute;
+    width:80%;
+    height:410px;
+    overflow:auto;
+    padding-right:10px;
+}
+comm-msg {
+    width:fit-content;
+    min-width:110px;
+    display:block;
+    margin-left:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    clear:right;
+    float:right;
+    background:var(--accent);
+    color:var(--text-on-accent);
+    line-height:180%;
+    text-align:left;
+    font-family:var(--font-body);
+    letter-spacing:1px;
+    font-size:var(--size-md);
+    padding:8px;
+    border-radius:8px;
+}
+comm-msg img {
+    max-width:200px;
+}
+comm-action {
+    width:fit-content;
+    min-width:110px;
+    display:block;
+    clear:right;
+    float:right;
+    margin-left:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    background:var(--accent-30);
+    color:var(--text-on-bg);
+    line-height:180%;
+    text-align:right;
+    font-family:var(--font-body);
+    font-size:var(--size-md);
+    padding:10px;
+    letter-spacing:1px;
+    font-style:italic;
+}
+comm-block::-webkit-scrollbar {
+    width:thin }
+comm-block::-webkit-scrollbar-track {
+    background:var(--accent-30); }
+comm-block::-webkit-scrollbar-thumb {
+    background:var(--accent); }
